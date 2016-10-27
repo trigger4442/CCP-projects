@@ -7,7 +7,7 @@ package prepproject;
 
 /**
  *
- * @author phili
+ * @author phili hello there 
  */
 public final class Classes {
     private String name;
