@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package prepproject;
+import java.util.ArrayList;
 
 /**
  *
@@ -12,13 +13,13 @@ package prepproject;
 public final class Classes {
     private String name;
     private String preReqName;
-    private int classNum;
+    private String classNum;
     private int amtCredits;
     private boolean preReq;
     private boolean taken;
     
     public Classes (String name, String preReqName, 
-            int classNum, int amtCredits, boolean preReq, 
+            String classNum, int amtCredits, boolean preReq, 
             boolean taken)
     {
         this.setName(name);
@@ -28,6 +29,16 @@ public final class Classes {
         this.setPreReq(preReq);
         this.setTaken(taken);
         
+    }
+    
+    public Classes (String name, String classNum, int amtCredits, boolean preReq, boolean taken)
+    {
+        this.setName(name);
+        this.setClassNum(classNum);
+        this.setAmtCredits(amtCredits);
+        this.setPreReq(preReq);
+        this.setTaken(taken);
+        this.preReqName = null;
     }
 
     /**
@@ -65,7 +76,7 @@ public final class Classes {
     /**
      * @return the classNum
      */
-    public int getClassNum() 
+    public String getClassNum() 
     {
         return classNum;
     }
@@ -73,7 +84,7 @@ public final class Classes {
     /**
      * @param classNum the classNum to set
      */
-    public void setClassNum(int classNum) 
+    public void setClassNum(String classNum) 
     {
         this.classNum = classNum;
     }

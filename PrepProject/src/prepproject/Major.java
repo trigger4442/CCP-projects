@@ -21,10 +21,20 @@ public class Major {
     }
     
     public void addClass(String name, String preReqName, 
-            int classNum, int amtCredits, boolean preReq, 
+            String classNum, int amtCredits, boolean preReq, 
             boolean taken)
     {
         Classes class1 = new Classes(name, preReqName, 
+            classNum, amtCredits, preReq, taken);
+        
+        classes.add(class1);
+    }
+    
+    public void addClass(String name, 
+            String classNum, int amtCredits, boolean preReq, 
+            boolean taken)
+    {
+        Classes class1 = new Classes(name,
             classNum, amtCredits, preReq, taken);
         
         classes.add(class1);
@@ -41,10 +51,10 @@ public class Major {
         classes.remove(arrayIndex);   
     }
     
-    public void deleteClassNum(int classNum)
+    public void deleteClassNum(String classNum)
     {
         int arrayIndex = 0;
-        while(classNum != classes.get(arrayIndex).getClassNum())
+        while(!classNum.equals(classes.get(arrayIndex).getClassNum()))
         {
             arrayIndex++;
         }
