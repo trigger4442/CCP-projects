@@ -9,6 +9,7 @@ package prepproject;
  *
  * @author phili
  */
-public class Schedule {
+public class Schedule 
+{
     
 }
