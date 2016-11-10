@@ -29,6 +29,25 @@ public class Main {
        ComputerScience.addClass("Software Development and Design", "Algorithem Design and Data Analysis", "CS-4290", 3, true, false);
        ComputerScience.addClass("Operating Systems and Networking", "Discrete Mathematical Structures 2", "CS-4400", 4, true, false);
        ComputerScience.addClass("Computer Science Senior Capstone", "Software Development and Design", "CS-4230", 3, true, false);
+       
+       TextReader text = new TextReader("CS.txt");
+       for(int i = 0; i < ComputerScience.classes.size(); i++)
+       {
+           String fileInput;
+           if(ComputerScience.classes.get(i).isPreReq())
+           {
+               fileInput = ComputerScience.classes.get(i).getName() + ", " + ComputerScience.classes.get(i).getPreReqName() + ", " + ComputerScience.classes.get(i).getClassNum() + ", " + Integer.toString(ComputerScience.classes.get(i).getAmtCredits()) + ", "
+                       + Boolean.toString(ComputerScience.classes.get(i).isPreReq()) + ", " + Boolean.toString(ComputerScience.classes.get(i).hasTaken());
+           }
+           else
+           {
+               fileInput = ComputerScience.classes.get(i).getName() + ", " + ComputerScience.classes.get(i).getClassNum() + ", " + Integer.toString(ComputerScience.classes.get(i).getAmtCredits()) + ", "
+                       + Boolean.toString(ComputerScience.classes.get(i).isPreReq()) + ", " + Boolean.toString(ComputerScience.classes.get(i).hasTaken());
+           }
+           text.WriteFile(fileInput);
+       }
+       text.CloseBufferedWriter();
+       
     }
     
 }
