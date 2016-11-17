@@ -1,0 +1,5 @@
+Calculus I, MA-1300, 4, false, false
+Calculus II, Calculus I, MA-1350, 4, true, false
+Calculus III, Calculus II, MA-2300, 4, true, false
+Linear Algebra, Calculus II, MA-2500, 3, true, false
+Differential Equations, Calculus III, MA-3100, true, false

@@ -131,7 +131,7 @@ public class TextReader
                     }
                     else if(commaCounter == 2)
                     {
-                        if(input[0] != 'C' || input[0] != 'M')
+                        if(input[6] != '0')
                         {
                             prereq = String.valueOf(input);
 
