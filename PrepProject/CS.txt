@@ -1,10 +1,10 @@
 Discrete Mathematical Structures 1, MA-2550, 3, false, false
 Introduction to Computer Science 1, CS-1140, 4, false, false
-Intreoduction to Computer Science 2, Introduction to Computer Science 1, CS-2150, 4, true, false
+Introduction to Computer Science 2, Introduction to Computer Science 1, CS-2150, 4, true, false
 Discrete Mathematical Structure 2, Discrete Mathematical Structures 1, CS-2550, 3, true, false
 Information and Knowledge Management, Discrete Mathematical Structure 2, CS-3100, 4, true, false
-Algorithm Design and Data Analysis, Discrete Mathematical Sturctures 2, CS-3500, 4, true, false
+Algorithm Design and Data Analysis, Discrete Mathematical Structures 2, CS-3500, 4, true, false
 Computer Architecture, Discrete Mathematical Structures 2, CS-4200, 4, true, false
-Software Development and Design, Algorithem Design and Data Analysis, CS-4290, 3, true, false
+Software Development and Design, Algorithm Design and Data Analysis, CS-4290, 3, true, false
 Operating Systems and Networking, Discrete Mathematical Structures 2, CS-4400, 4, true, false
 Computer Science Senior Capstone, Software Development and Design, CS-4230, 3, true, false
